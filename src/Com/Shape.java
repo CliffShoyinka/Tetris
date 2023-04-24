@@ -63,5 +63,8 @@ public class Shape {
     public void setRandomShape() {
         var r = new Random();
         int x = Math.abs(r.nextInt()) %7 +1;
+
+        Tet[] values = Tet.values();
+        setShape(values[x]);
     }
 }
